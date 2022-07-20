@@ -20,6 +20,23 @@ void main() {
 class Dice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Row(
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/dado1.png'),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset('images/dado2.png'),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
