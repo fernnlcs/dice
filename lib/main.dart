@@ -20,6 +20,9 @@ void main() {
 class Dice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var leftDiceNumber = 5;
+    var rightDiceNumber = 3;
+    
     return Center(
       child: Row(
         children: [
@@ -28,7 +31,7 @@ class Dice extends StatelessWidget {
               onPressed: () {
                 print('left button pressed');
               },
-              child: Image.asset('images/dado1.png'),
+              child: Image.asset('images/dado$leftDiceNumber.png'),
             ),
           ),
           Expanded(
@@ -36,7 +39,7 @@ class Dice extends StatelessWidget {
               onPressed: () {
                 print('right button pressed');
               },
-              child: Image.asset('images/dado2.png'),
+              child: Image.asset('images/dado$rightDiceNumber.png'),
             ),
           ),
         ],
