@@ -24,14 +24,18 @@ class Dice extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child: TextButton(
+              onPressed: () {
+                print('left button pressed');
+              },
               child: Image.asset('images/dado1.png'),
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child: TextButton(
+              onPressed: () {
+                print('right button pressed');
+              },
               child: Image.asset('images/dado2.png'),
             ),
           ),
